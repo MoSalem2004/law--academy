@@ -2,7 +2,7 @@
   <div
     class="ManageAdmins"
     id="ManageAdmins"
-    style="margin-top: -20px; padding-bottom: 50px; height: 100vh"
+    style="margin-top: -20px; padding-bottom: 50px"
   >
     <div class="container relative" style="padding-top: 160px">
       <div
