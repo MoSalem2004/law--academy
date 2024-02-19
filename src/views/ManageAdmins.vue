@@ -2,12 +2,12 @@
   <div
     class="ManageAdmins"
     id="ManageAdmins"
-    style="margin-top: -20px; padding-bottom: 50px"
+    style="margin-top: -20px; padding-bottom: 50px; height: 100vh"
   >
     <div class="container relative" style="padding-top: 160px">
       <div
         style="
-          font-size: 40px;
+          font-size: 48px;
           font-weight: bold;
           color: var(--main-color);
           font-family: system-ui;
@@ -28,9 +28,14 @@
           border-radius: 5px;
           cursor: pointer;
           border: 1px solid var(--main-color);
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          justify-content: center;
         "
       >
-        إضافة مشرف
+        <font-awesome-icon :icon="['fas', 'plus']" />
+        <div>إضافة مشرف</div>
       </div>
       <div
         class="main_Overlay"
@@ -325,7 +330,8 @@ export default {
   background-attachment: fixed;
 }
 .contain > div {
-  width: 32%;
+  padding: 30px;
+  width: 48%;
   border: 1px solid var(--main-color);
   border-radius: 5px;
   background: #ffffff82;
