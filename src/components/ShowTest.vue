@@ -607,7 +607,6 @@ export default {
       for (let i = 0; i < active.length; i++) {
         if (active[i].innerHTML === this.Qu[i].RightAnswer) {
           this.result += 1;
-          console.log(this.result);
         } else {
           this.percent = 0;
           this.appreciation = "ضعيف جدا";
@@ -637,10 +636,9 @@ export default {
       }, 100);
     },
     StartTime() {
-      this.targetTime = new Date().getTime() + this.Qu.length * 0.1 * 60 * 1000;
+      this.targetTime = new Date().getTime() + this.Qu.length * 1.5 * 60 * 1000;
       this.updateCurrentTime();
       this.timer = setInterval(() => {
-        console.log(this.formatTime);
         this.updateCurrentTime();
         if (this.formatTime === "0 دقيقة 0 ثانية ") {
           clearInterval(this.timer);
@@ -696,7 +694,6 @@ export default {
 
           if (active[i].innerHTML === this.Qu[i].RightAnswer) {
             this.result += 1;
-            console.log(this.result);
           } else {
             this.percent = 0;
             this.appreciation = "ضعيف جدا";
@@ -773,7 +770,6 @@ export default {
       }, 50);
     },
     async AddData() {
-      console.log(this.qu1.length);
       if (
         this.qu1 !== "" &&
         this.RightAnswer !== "" &&
