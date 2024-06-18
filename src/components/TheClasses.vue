@@ -119,7 +119,6 @@ export default {
     select_1() {
       this.step++;
       setTimeout(() => {
-        console.log(this.type);
         if (this.type === "معهد أعوان القضاء") {
           document.querySelector(".selecte_2 > span:last-child").style.display =
             "none";

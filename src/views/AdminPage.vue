@@ -50,8 +50,10 @@ export default {
 .AdminPage {
   background-image: url("../assets/WhatsApp Image 2023-12-04 at 11.00.58 PM.jpeg");
   background-size: cover;
-  background-position: center top;
-  background-attachment: fixed;
+  
+      background-position: center bottom;
+    background-attachment: fixed;
+    height: 80vh;
 }
 .contain > a {
   width: 32%;

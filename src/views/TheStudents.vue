@@ -122,6 +122,7 @@
         class="main_Overlay"
         v-if="Sliders"
         @click="Sliders = !Sliders"
+        style="z-index: 100"
       ></div>
       <div
         v-if="Sliders"
@@ -551,8 +552,18 @@
       </div>
     </div>
 
-    <div class="main_Overlay" v-if="BIllShow" style="z-index: 101"></div>
-    <div class="main_Overlay" v-if="ResultShow" style="z-index: 101"></div>
+    <div
+      class="main_Overlay"
+      @click="BIllShowFunction"
+      v-if="BIllShow"
+      style="z-index: 101"
+    ></div>
+    <div
+      class="main_Overlay"
+      v-if="ResultShow"
+      style="z-index: 101"
+      @click="ResultShowFunction"
+    ></div>
     <div
       class="Main_Box BILL bg-white fixed z-10 rounded p-2.5 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 max-h-90 overflow-auto"
       style="z-index: 101; width: 90%"
@@ -1056,6 +1067,7 @@ export default {
   width: 90%;
   text-align: center;
 }
+
 nav {
   background: #fff;
   padding: 15px;

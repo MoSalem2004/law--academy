@@ -331,7 +331,7 @@
               class="flex align-center justify-between font-bold"
               style="background: #fafafa; padding: 10px; border-radius: 5px"
             >
-              <div class="num">01000000000</div>
+              <div class="num">01087622933</div>
 
               <div
                 class="flex color align-center justify-between gap-2.5 bg-[#fff] p-2.5 rounded cursor-pointer"
@@ -368,7 +368,7 @@
               class="flex align-center justify-between font-bold"
               style="background: #fafafa; padding: 10px; border-radius: 5px"
             >
-              <div class="num">01500000000</div>
+              <div class="num">01092866755</div>
               <div
                 class="flex color align-center justify-between gap-2.5 bg-[#fff] p-2.5 rounded cursor-pointer"
                 @click="copyTextDad($event)"
@@ -701,7 +701,6 @@ export default {
     //   const documentSnapshot = await getDoc(documentRef);
     //   const fieldName = "pay";
     //   const currentFieldValue = documentSnapshot.data()[fieldName];
-    //   console.log("currentFieldValue", documentSnapshot.data()[fieldName]);
     //   let Data = {
     //     auth_token: token,
     //     amount_cents: `${this.BillPrice}00`,

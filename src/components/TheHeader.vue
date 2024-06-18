@@ -426,9 +426,7 @@ export default {
           const docRef = doc(db, "المشرفين", localStorage.getItem("userid"));
           const docSnap = await getDoc(docRef);
           // docSnap.data() will be undefined in this case
-          console.log("No such document!");
           if (docSnap.exists()) {
-            console.log("Document data:", docSnap.data());
             Name = docSnap.data().Name;
           } else {
             console.log("No such document!");
